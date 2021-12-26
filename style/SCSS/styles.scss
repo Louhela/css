@@ -1,0 +1,128 @@
+$bg-color: #16161D;
+$text-color: #fff;
+$highlight-color: #5304A3;
+$heading-color: #bebebe;
+
+@mixin card($card: DarkGray) {
+    box-shadow: 0px 0px 50px 10px #5304A3, 0px 0px 5px 10px #747474;
+    background-color: $bg-color;
+
+}
+
+body {
+    background-color: $bg-color;
+}
+
+
+.container {
+    color: $text-color;
+
+    .article:nth-of-type(1)>p:first-letter {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $highlight-color;
+    }
+
+    [target=_blank] {
+        text-decoration: none;
+        color: $heading-color;
+    }
+
+    h1 {
+        text-align: center;
+        color: $heading-color;
+        background-color: rgb(24, 24, 24);
+    }
+}
+
+.facts {
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.row {
+    margin: 40px;
+    justify-content: center;
+}
+
+.carousel {
+    margin: 10px 0 10px 0;
+    @include card;
+}
+
+footer {
+    color: $text-color;
+}
+
+.card {
+    @include card;
+    margin-top: 15px;
+}
+
+.card-img-top {
+    margin-top: 10px;
+}
+
+.nav-link {
+    margin: 5px;
+    font-weight: bold;
+    color: rgb(216, 216, 216);
+}
+
+.nav-pills .nav-link.active {
+    background-color: $highlight-color;
+    color: rgb(216, 216, 216);
+}
+
+.nav-link:hover {
+    color: $highlight-color
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    background-color: rgb(177, 184, 165);
+}
+
+header {
+    background-color: #343a40;
+}
+
+.article {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+} 
+
+.card-img-top {
+    margin: 10px auto;
+} 
+
+ .nav-pills .nav-link.active {
+    background-color: #6c757d;
+    color: rgb(216, 216, 216);
+}
+
+.nav-link {
+    margin: 5px;
+    font-weight: bold;
+    color: rgb(216, 216, 216);
+} */
